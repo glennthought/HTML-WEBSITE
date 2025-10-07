@@ -1,0 +1,273 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    background-image: linear-gradient(to right, rgb(29, 29, 29), rgb(72, 72, 72), rgb(143, 143, 143));
+    background-size: 600% 600%;
+    animation: bg 10s ease infinite;
+    height: 100vh;
+    font-family: "custom_two", sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-self: center;
+    justify-content: space-between;
+    background-image: linear-gradient(to bottom, rgba(104, 69, 8, 0.665), rgba(167, 106, 0, 0.632), rgba(195, 120, 0, 0.656), rgba(255, 188, 73, 0.679), rgba(255, 243, 178, 0.646), rgba(253, 156, 0, 0.656), rgba(98, 54, 0, 0.589));
+    background-size: 300% 300%;
+    animation: bg 10s ease infinite;
+    width: 97%;
+    height: 50px;
+    margin: 3px;
+    border-radius: 10px;
+    border: solid 1px rgba(52, 35, 1, 0.402);
+}
+
+.container .navbar {
+    display: flex;
+    justify-content: space-between;
+    margin: 3px;
+    width: 100%;
+    justify-self: center;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.176), rgba(255, 255, 255, 0.176), rgba(0, 0, 0, 0.152));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 11px;
+    z-index: 1000;
+    position: relative;
+}
+
+.container .navbar .text {
+    display: flex;
+    justify-content: space-between;
+    text-shadow: 1px 1px 5px rgb(85, 51, 2);
+    margin: 2px
+}
+
+.container .navbar .navlist {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    z-index: 2000;
+    position: relative;
+}
+
+.container .navbar .navlist li {
+    list-style: none;
+    margin: 2px;
+    justify-content: space-between;
+
+
+}
+
+.container .navbar .navlist a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.597);
+    font-family: "custom_two", sans-serif;
+    font-size: 20px;
+    text-shadow: 1px 1px 5px rgb(55, 36, 4);
+}
+
+.container .navbar .navlist a:hover {
+    color: orangered;
+}
+
+.banner {
+    background-clip: padding-box;
+    background-image: url(/stars.gif);
+    background-repeat: no-repeat;
+    background-size: 300% 300%;
+    animation: rainbowShift 20s ease infinite alternate-reverse;
+    width: 97%;
+    height: 50px;
+    margin: 10px;
+    border-radius: 20px;
+    border: solid 5px rgba(39, 39, 39, 0.518);
+    justify-self: center;
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
+}
+
+.box {
+    width: 99%;
+    height: auto;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.275), rgba(4, 3, 0, 0.256));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    gap:30px;
+    justify-self: center;
+    align-self: center;
+    border: solid 4px rgba(172, 255, 47, 0.575);
+    border-radius: 25px;
+}
+
+.box .card1 {
+    background-position: center;
+    width: 250px;
+    height: 250px;
+    background-image: url(/gundam_logo/m_gundam.png);
+    filter: grayscale(100%);
+    transition: all 0.5s ease;
+    background-size: 97% 100%;
+    background-repeat: no-repeat;
+    margin: 5px;
+    border: solid 4px rgba(0, 230, 0, 0.58);
+    border-radius: 30px;
+    background-color: white;
+
+    cursor: pointer;
+    z-index: 2;
+}
+
+.box .card2 {
+    background-position: center;
+    width: 250px;
+    height: 250px;
+    background-image: url(/gundam_logo/m_zeta_gundam.png);
+    filter: grayscale(100%);
+    transition: all 0.5s ease;
+    background-size: 97% 100%;
+    background-repeat: no-repeat;
+    margin: 5px;
+    border: solid 4px rgba(0, 230, 0, 0.58);
+    border-radius: 30px;
+    background-color: white;
+        
+
+    cursor: pointer;
+    z-index: 2;
+}
+
+.box .card3 {
+    width: 250px;
+    height: 250px;
+    background-image: url(/gundam_logo/m_gundam_charcntatk.png);
+    filter: grayscale(100%);
+    transition: all 0.5s ease;
+    background-size: 97% 100%;
+    background-repeat: no-repeat;
+    margin: 5px;
+    border: solid 4px rgba(0, 230, 0, 0.58);
+    border-radius: 30px;
+    background-color: white;
+    background-position: center;
+        
+    cursor: pointer;
+    z-index: 2;
+}
+
+.box .card4 {
+    width: 250px;
+    height: 250px;
+    background-image: url(/gundam_logo/m_gundam_unicorn.png);
+    filter: grayscale(100%);
+    transition: all 0.5s ease;
+    background-size: 97% 100%;
+    background-repeat: no-repeat;
+    margin: 5px;
+    background-color: white;
+    border: solid 4px rgba(0, 230, 0, 0.58);
+    border-radius: 30px;
+    background-position: center;
+        
+    cursor: pointer;
+    z-index: 2;
+}
+
+.box .card5 {
+    width: 250px;
+    height: 250px;
+    background-image: url(/gundam_logo/m_gundam_nt.png);
+    filter: grayscale(100%);
+    transition: all 0.7s ease;
+    background-size: 97% 100%;
+    background-repeat: no-repeat;
+    margin: 5px;
+    background-color: white;
+    border: solid 4px rgba(0, 230, 0, 0.58);
+    border-radius: 30px;
+    background-position: center;
+        
+    cursor: pointer;
+    z-index: 2;
+}
+
+
+.box .card1:hover {
+    filter: grayscale(0%);
+    transform: scale(1.3);
+    border: solid 1px rgba(0, 230, 0, 0.58);
+    animation: inside_glow 0.4s infinite alternate;
+}
+
+.box .card2:hover {
+    filter: grayscale(0%);
+    transform: scale(1.3);
+    border: solid 1px rgba(0, 230, 0, 0.58);
+    animation: inside_glow 0.4s infinite alternate;
+}
+
+.box .card3:hover {
+    filter: grayscale(0%);
+    transform: scale(1.3);
+    border: solid 1px rgba(0, 230, 0, 0.58);
+    animation: inside_glow 0.4s infinite alternate;
+}
+
+.box .card4:hover {
+    filter: grayscale(0%);
+    transform: scale(1.3);
+    border: solid 1px rgba(0, 230, 0, 0.58);
+    animation: inside_glow 0.4s infinite alternate;
+}
+
+.box .card5:hover {
+    filter: grayscale(0%);
+    transform: scale(1.3);
+    border: solid 1px rgba(0, 230, 0, 0.58);
+    animation: inside_glow 0.4s infinite alternate;
+}
+
+@keyframes bg {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@font-face {
+    src: url('/Hanalei/Hanalei-Regular.ttf')format("truetype");
+    font-family: "custom_one";
+}
+
+@font-face {
+    src: url('/Fascinate/Fascinate-Regular.ttf')format("truetype");
+    font-family: "custom_two";
+}
+
+
+@keyframes inside_glow {
+    from {
+        box-shadow: inset 0 0 10px rgba(255, 0, 0, 0.6);
+    }
+
+    to {
+        box-shadow: inset 0 0 30px rgb(255, 46, 46);
+    }
+}
