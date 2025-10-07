@@ -1,0 +1,446 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  transition: all 0.8s;
+}
+
+body {
+  background-image: url(/img.gif);
+  animation: bg 15s ease infinite;
+  background-size: 190% 110%;
+  background-repeat: no-repeat;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+
+}
+
+.log-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height:auto;
+  background-image: linear-gradient(to bottom, rgba(255, 172, 5, 0.255), rgba(128, 128, 128, 0.213), rgba(0, 0, 0, 0.265));
+  margin: 2px;
+  padding: 3px;
+  border: solid 3px rgba(53, 47, 47, 0.471);
+  border-radius: 25px;
+  font-size: 40px;
+  animation: outside_glow_tech 0.7s alternate infinite;
+  backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(50px);
+}
+
+.log-container .login-box {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.049), rgba(128, 128, 128, 0.001), rgba(0, 0, 0, 0.015));
+  margin: 100px;
+  padding: 3px;
+  border: solid 3px rgba(53, 47, 47, 0.471);
+  border-radius: 20px;
+  width: 360px;
+  height: auto;
+  animation: inside_glow_tech 0.7s alternate infinite;
+  margin: 2px;
+  backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(50px);
+}
+
+.log-container .login-box .login-title {
+  justify-self: center;
+  width: 100%;
+  height: auto;
+  border-radius: 30px;
+  background: linear-gradient(135deg, rgb(104, 69, 8), rgb(167, 106, 0), rgb(195, 120, 0), rgb(255, 188, 73), rgb(255, 243, 178), rgb(253, 156, 0), rgb(98, 54, 0));
+  background-size: 400% 400%;
+  animation: rainbowShift 5s ease infinite;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.4);
+  border: solid 5px rgba(0, 0, 0, 0.4);
+  font-family: "custom_two", sans-serif;
+  font-size: 30px;
+  text-shadow: 3px 3px 3px #ffb300;
+  text-align: center;
+}
+
+.log-container .login-box .form{
+  margin: 20px;
+
+}
+
+
+.log-container .login-box .form .txt {
+  justify-self: center;
+  display: flex;
+  font-family: "custom_two", sans-serif;
+  font-weight: 200;
+  background-image: linear-gradient(135deg, rgb(255, 175, 38), rgb(255, 198, 100), rgb(255, 168, 27), rgb(255, 188, 73), rgb(255, 243, 178), rgb(255, 171, 37), rgb(255, 204, 35));
+  animation: rainbowShift 5s ease infinite;
+  background-size: 400% 400%;
+  font-size: 25px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 1px 1px 13px #9b6a00;
+
+}
+
+.log-container .login-box .form .input-box {
+  justify-self: center;
+  text-indent: 5px;
+  display: flex;
+  background-image: linear-gradient(to right, rgba(47, 47, 47, 0.485), rgba(132, 132, 132, 0.471), rgba(44, 44, 44, 0.502));
+  width: 200px;
+  height: 40px;
+  border-radius: 15px;
+  border: solid 3px rgb(25, 25, 25);
+  font-family: "custom-two", sans-serif;
+  color: rgba(0, 0, 0, 0.776);
+  margin: 5px;
+  animation: inside_glow_tech 3s ease-in-out infinite alternate;
+}
+
+.log-container .login-box .form .input-box:hover {
+  animation: glowing 5s infinite alternate;
+  animation: inside_glow_tech 3s ease-in-out infinite alternate;
+}
+
+.button {
+  margin: 30px 0px 0px 0px;
+  display: flex;
+  justify-self: center;
+  width: 100%;
+  height: 40px;
+  border-radius: 20px;
+  font-size: 20px;
+  font-family: "custom_two", sans-serif;
+  background-image: linear-gradient(135deg, rgb(104, 69, 8), rgb(167, 106, 0), rgb(195, 120, 0), rgb(255, 188, 73), rgb(255, 243, 178), rgb(253, 156, 0), rgb(98, 54, 0));
+  animation: rainbowShift 5s ease infinite;
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  transition: all 0.5s ease-in-out;
+
+}
+
+.button:hover {
+  transform: scale(1.1);
+  animation: glowing 10s infinite alternate;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgb(255, 0, 0);
+  background-clip: text;
+  color: rgb(255, 0, 0);
+  animation: inside_glow_tech 0.5s ease-in-out infinite alternate;
+}
+
+.log-container .lower-box-sign .links{
+
+ display: flex;
+ flex-direction: column;
+ gap: 2px;
+ margin-top: 10px;
+ margin-bottom: 10px;
+ width: 100%;
+ height: auto;
+}
+.log-container .lower-box-sign a{
+  text-decoration: none;
+  align-self: center;
+  color: black;
+}
+.card1{
+ margin: 0px 10px 0px 10px;
+ width: 90%;
+ height: auto;
+ display:flex ;
+ justify-content:center;
+ gap:20px;
+ font-size: 20px;
+ background-image: linear-gradient(to right,rgb(18, 69, 140),rgb(43, 118, 223),rgb(79, 147, 241));
+ border: solid 2px rgba(0, 0, 0, 0.594);
+ border-radius: 10px;
+ background-clip: padding-box;
+ transition: all 0.8s;
+}
+.card2{
+ margin: 0px 10px 0px 10px;
+ width: 90%;
+ height: auto;
+ display:flex ;
+ justify-content:center;
+ gap:20px;
+ font-size: 20px;
+ background-image: linear-gradient(to right,rgb(113, 113, 113),rgb(167, 165, 165),rgb(255, 255, 255));
+ border: solid 2px rgba(0, 0, 0, 0.594);
+ border-radius: 10px;
+ background-clip: padding-box;
+ transition: all 0.8s;
+}
+.card3{
+ background-clip: padding-box;
+ margin: 0px 10px 0px 10px;
+ width: 90%;
+ height: auto;
+ display:flex ;
+ justify-content:center;
+ gap:20px;
+ font-size: 20px;
+ background-image: linear-gradient(to right,rgb(48, 48, 48),rgb(82, 82, 82),rgb(154, 154, 154));
+ border: solid 2px rgba(0, 0, 0, 0.594);
+ border-radius: 10px;
+ transition: all 0.8s;
+}
+.links a{
+  width: 80px;
+}
+
+.card1 .logo1{
+ background-image: url(/gundam_logo/facebook.jpg);
+ background-size: 310%;
+ background-position: center;
+ width: 30px;
+ height: 30px;
+ border-radius: 50%;
+}
+.card2 .logo2{
+ background-image: url(/gundam_logo/google.png);
+ background-size: cover;
+ background-position: center;
+ width: 30px;
+ height: 30px;
+ border-radius: 50%;
+}
+.card3 .logo3{
+ background-image: url(/gundam_logo/guest.png);
+ background-size: 80%;
+ background-position: center;
+ width: 30px;
+ height: 30px;
+ border-radius: 50%;
+}
+.card1:hover{
+  transform: scale(1.2);
+  animation: inside_glow_tech 5s infinite alternate;
+}
+.card2:hover{
+  transform: scale(1.2);
+  animation: inside_glow_tech 5s infinite alternate;
+}
+.card3:hover{
+  transform: scale(1.2);
+  animation: inside_glow_tech 5s infinite alternate;
+}
+.low{
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.049), rgba(128, 128, 128, 0.001), rgba(0, 0, 0, 0.015));
+  margin: 100px;
+  padding: 3px;
+  border: solid 3px rgba(53, 47, 47, 0.471);
+  border-radius: 20px;
+  width: 360px;
+  height: auto;
+  animation: inside_glow_tech 0.7s alternate infinite;
+  margin: 2px;
+  backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(50px);
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.low a{
+    color: rgb(0, 26, 255);
+    transition: all 0.4s;
+}
+.low a:hover{
+    font-size: 30px;
+}
+
+
+@keyframes bg {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes glowing {
+  0% {
+    box-shadow: 0 0 10px #ffe9c5;
+  }
+
+  25% {
+    box-shadow: 0 0 20px #ffe47a;
+  }
+
+  50% {
+    box-shadow: 0 0 30px #ffb70e;
+  }
+
+  75% {
+    box-shadow: 0 0 20px #c76300;
+  }
+
+  100% {
+    box-shadow: 0 0 10px #7a4500;
+  }
+}
+
+@keyframes rainbowShift {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@font-face {
+  src: url('/Hanalei/Hanalei-Regular.ttf')format("truetype");
+  font-family: "custom_one";
+}
+
+@font-face {
+  src: url('/Fascinate/Fascinate-Regular.ttf')format("truetype");
+  font-family: "custom_two";
+}
+
+@media(max-width:1300px){
+ *{
+  transform: scale(0.97);
+ }
+}
+
+@media(max-width:650px) {
+
+  /*Responsive part*/
+  .log-container {
+    width: 210px;
+    height: 84vh;
+    font-size: medium;
+
+  }
+
+  .log-container .login-box {
+    width: 190px;
+    height: auto ;
+    font-size: medium;
+  }
+
+  .log-container .login-box .login-title {
+    width: 90%;
+    height: 25px;
+    font-size: 15px;
+    border-radius: 15px;
+    border: solid 2px rgba(0, 0, 0, 0.4);
+
+  }
+
+  .log-container .login-box .form .txt {
+    font-size: 10px;
+  }
+
+  .log-container .login-box .form .input-box {
+    width: 145px;
+    height: 20px;
+    font-size: xx-small;
+    border-radius: 8px;
+    border: solid 2px black;
+  }
+
+  .log-container .login-box .form .button {
+    width: 50px;
+    height: 20px;
+    font-size: 10px;
+    border-radius: 8px;
+    
+  }
+
+  .login-box .lower-box-sign{
+    width: auto;
+    height: auto;
+    font-size: 10px;
+    
+  }
+  .login-box .lower-box-sign .text-l{
+    font-size: 10px;
+  }
+  .log-container .lower-box-sign .signup{
+    font-size: 10px;
+  }
+
+  .lower-box-sign .links .card1{
+   height: 25px;
+   width: 90%;
+   font-size: 15px;
+  }
+  .lower-box-sign .links .card2{
+   height: 25px;
+   width: 90%;
+   font-size: 15px;
+  }
+  .lower-box-sign .links .card3{
+   height: 25px;
+   width:90%;
+   font-size: 15px;
+  }
+
+  .links .card1 .logo1{
+   width: 20px;
+   height: 20px;
+   background-size: 350%;
+  }
+  .links .card2 .logo2{
+   width: 20px;
+   height: 20px;
+  }
+  .links .card3 .logo3{
+   width: 20px;
+   height: 20px;
+  }
+  .low{
+
+    width: 90%;
+    font-size: 10px;
+  }
+
+
+
+}
+
+@keyframes inside_glow_tech {
+  from {
+    box-shadow: inset 0 0 10px rgba(96, 164, 0, 0.6);
+  }
+
+  to {
+    box-shadow: inset 0 0 30px rgb(46, 255, 84);
+  }
+}
+
+@keyframes outside_glow_tech {
+  from {
+    box-shadow: 0 0 30px rgba(96, 164, 0, 0.6);
+  }
+
+  to {
+    box-shadow: 0 0 50px rgb(46, 255, 84);
+  }
+}
