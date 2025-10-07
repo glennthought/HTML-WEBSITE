@@ -6,7 +6,7 @@
 }
 
 body {
-  background-image: url("./img.gif");
+  background-image: url(./img.gif);
   animation: bg 15s ease infinite;
   background-size: 190% 110%;
   background-repeat: no-repeat;
@@ -531,3 +531,4 @@ body {
   }
 
 }
+
