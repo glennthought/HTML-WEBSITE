@@ -482,7 +482,7 @@ hr {
 }
 
 #grunt3 {
-    background-image: url("./Characters/guntank.gif");
+    background-image: url("../Characters/guntank.gif");
     background-size: 100% 115%;
     width: 200px;
     height: 200px;
@@ -508,7 +508,7 @@ hr {
 }
 
 #faction2 {
-    background-image: url("./Characters/zeon.png");
+    background-image: url("../Characters/zeon.png");
     background-size: 100% 100%;
     width: 200px;
     height: 200px;
@@ -516,7 +516,7 @@ hr {
 }
 
 #faction3 {
-    background-image: url("./Characters/gouf.webp");
+    background-image: url("../Characters/gouf.webp");
     background-size: 100% 100%;
     width: 200px;
     height: 200px;
@@ -827,4 +827,5 @@ hr {
     }
 
 }
+
 
