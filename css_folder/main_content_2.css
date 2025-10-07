@@ -815,12 +815,12 @@ hr {
 }
 
 @font-face {
-    src: url('/Hanalei/Hanalei-Regular.ttf')format("truetype");
+    src: url('../Hanalei/Hanalei-Regular.ttf')format("truetype");
     font-family: "custom_one";
 }
 
 @font-face {
-    src: url('/Fascinate/Fascinate-Regular.ttf')format("truetype");
+    src: url('../Fascinate/Fascinate-Regular.ttf')format("truetype");
     font-family: "custom_two";
 }
 
@@ -834,3 +834,4 @@ hr {
     }
 
 }
+
