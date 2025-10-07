@@ -46,7 +46,7 @@ body {
     align-items: end;
     font-family: "custom_two", sans-serif;
     display: flex;
-    background-image: url(./Characters/kamille.jpg);
+    background-image: url("../Characters/kamille.jpg");
     width: 120px;
     height: 130px;
     background-size: 100% 110%;
@@ -63,7 +63,7 @@ body {
     align-items: end;
     font-family: "custom_two", sans-serif;
     display: flex;
-    background-image: url(./Characters/quebley.jpg);
+    background-image: url("../Characters/quebley.jpg");
     width: 120px;
     height: 130px;
     background-size: 100% 110%;
@@ -80,7 +80,7 @@ body {
     align-items: end;
     font-family: "custom_two", sans-serif;
     display: flex;
-    background-image: url(./Characters/titans.png);
+    background-image: url("../Characters/titans.png");
     width: 120px;
     height: 130px;
     background-size: 100%;
@@ -97,7 +97,7 @@ body {
     align-items: end;
     font-family: "custom_two", sans-serif;
     display: flex;
-    background-image: url(./Characters/vinyl.gif);
+    background-image: url("../Characters/vinyl.gif");
     width: 120px;
     height: 130px;
     background-size: cover;
@@ -127,7 +127,7 @@ body {
     margin: 0.2px;
     align-self: center;
     padding: 3px;
-    background-image: url(./stars.gif);
+    background-image: url("../stars.gif");
     border-radius: 5px;
     border: solid 5px rgb(189, 189, 189);
 
@@ -152,7 +152,7 @@ body {
     border: solid 2px rgb(255, 115, 0);
     border-radius: 10px;
     background-color: aliceblue;
-    background-image: url(./gundam_logo/m_zeta_gundam.png);
+    background-image: url("../gundam_logo/m_zeta_gundam.png");
     background-size: 90% 90%;
     background-position: center;
     background-repeat: no-repeat;
@@ -295,7 +295,7 @@ body {
     border: solid 0.5px black;
     background-size: 600% 600%;
     animation: rainbowShift 5s ease infinite;
-    background-image: url(./stars.gif);
+    background-image: url("../stars.gif");
     transition: background-image 0.5s ease;
 
 }
@@ -396,7 +396,7 @@ hr {
 
 
 #protagonist {
-    background-image: url(./Characters/kamille.jpg);
+    background-image: url("../Characters/kamille.jpg");
     background-size: 100% 120%;
     width: 100px;
     height: 100px;
@@ -405,7 +405,7 @@ hr {
 }
 
 #antagonist {
-    background-image: url(./Characters/paptimus.jpg);
+    background-image: url("../Characters/paptimus.jpg");
     background-size: 150% 120%;
     background-position: center;
     width: 100px;
@@ -414,7 +414,7 @@ hr {
 }
 
 #sidecharacter1 {
-    background-image: url(./Characters/jerid.png);
+    background-image: url("../Characters/jerid.png");
     background-size: 100% 110%;
     width: 100px;
     height: 100px;
@@ -422,7 +422,7 @@ hr {
 }
 
 #sidecharacter2 {
-    background-image: url(./Characters/haman.webp);
+    background-image: url("../Characters/haman.webp");
     background-size: 100%;
     width: 100px;
     height: 100px;
@@ -430,7 +430,7 @@ hr {
 }
 
 #sidecharacter3 {
-    background-image: url(./Characters/amurp_zeta.jpg);
+    background-image: url("../Characters/amurp_zeta.jpg");
     background-size: 100% 110%;
     width: 100px;
     height: 100px;
@@ -438,7 +438,7 @@ hr {
 }
 
 #sidecharacter4 {
-    background-image: url(./Characters/quattro.jpg);
+    background-image: url("../Characters/quattro.jpg");
     background-size: 100% 110%;
     width: 100px;
     height: 100px;
@@ -448,7 +448,7 @@ hr {
 
 
 #protagmech {
-    background-image: url(./gundam_folder/z-gundam.gif);
+    background-image: url("../gundam_folder/z-gundam.gif");
     background-size: cover;
     background-position: center;
     width: 200px;
@@ -459,7 +459,7 @@ hr {
 }
 
 #antagmech {
-    background-image: url(./rival_folder/qubeley.gif);
+    background-image: url("../rival_folder/qubeley.gif");
     background-size: 100% 110%;
     width: 200px;
     height: 200px;
@@ -467,7 +467,7 @@ hr {
 }
 
 #grunt1 {
-    background-image: url(./Characters/ricckdias.gif);
+    background-image: url("../Characters/ricckdias.gif");
     background-size: 100% 110%;
     width: 200px;
     height: 200px;
@@ -475,7 +475,7 @@ hr {
 }
 
 #grunt2 {
-    background-image: url(./Characters/psychogundam.gif);
+    background-image: url("../Characters/psychogundam.gif");
     background-size: 100% 110%;
     width: 200px;
     height: 200px;
@@ -483,7 +483,7 @@ hr {
 }
 
 #grunt3 {
-    background-image: url(./Characters/mk2.gif);
+    background-image: url("../Characters/mk2.gif");
     background-size: 100% 115%;
     width: 200px;
     height: 200px;
@@ -491,7 +491,7 @@ hr {
 }
 
 #grunt4 {
-    background-image: url(./Characters/hyakkusjikki.gif);
+    background-image: url("../Characters/hyakkusjikki.gif");
     background-size: 100% 110%;
     width: 200px;
     height: 200px;
@@ -501,7 +501,7 @@ hr {
 
 
 #faction1 {
-    background-image: url(./Characters/zeonzoen.webp);
+    background-image: url("../Characters/zeonzoen.webp");
     background-size: 100% 100%;
     width: 200px;
     height: 200px;
@@ -509,7 +509,7 @@ hr {
 }
 
 #faction2 {
-    background-image: url(./Characters/aeug.webp);
+    background-image: url("../Characters/aeug.webp");
     background-size: 100% 100%;
     width: 200px;
     height: 200px;
@@ -517,7 +517,7 @@ hr {
 }
 
 #faction3 {
-    background-image: url(./Characters/titans.png);
+    background-image: url("../Characters/titans.png");
     background-size: 100% 100%;
     width: 200px;
     height: 200px;
@@ -832,4 +832,5 @@ hr {
     to {
         box-shadow: inset 0 0 30px rgb(255, 46, 46);
     }
+
 }
