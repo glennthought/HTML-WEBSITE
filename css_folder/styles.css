@@ -80,7 +80,7 @@ body {
 
 .banner {
     background-clip: padding-box;
-    background-image: url("./stars.gif");
+    background-image: url("../stars.gif");
     background-repeat: no-repeat;
     background-size: 300% 300%;
     animation: rainbowShift 20s ease infinite alternate-reverse;
@@ -271,6 +271,7 @@ body {
         box-shadow: inset 0 0 30px rgb(255, 46, 46);
     }
 }
+
 
 
 
