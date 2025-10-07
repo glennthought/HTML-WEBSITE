@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+    <link rel="stylesheet" href="css_folder/responsive.css">
+    <link rel="stylesheet" href="css_folder/signup.css">
+</head>
+
+<body>
+    <div class="log-container">
+        <div class="login-box">
+            <h1 class="login-title">Create an Account</h1>
+            <form id="myForm" class="form">
+                <label class="txt" for="username">Username/Email:</label>
+                <input class="input-box" type="text" id="username" name="username" placeholder="juan_delacruz@gmail.com"
+                    required>
+                <label class="txt" for="pwd">Password:</label>
+                <input class="input-box" type="password" id="pwd" name="pwd" placeholder="Password" required
+                >
+                <label class="txt" for="pwd">Confirm Password:</label>
+                <input class="input-box"  id="cnfrmpassword" type="password" name="cnfrmpassword" placeholder="Password" required>
+
+                <input class="button" type="submit" value="Sign up">
+            </form>
+        </div>
+        <div class="login-box">
+            <div class="lower-box-sign">
+                <div class="links">
+                    <div class="card1">
+                        <div class="logo1"></div>
+                        <a>Facebook</a>
+                    </div>
+                    <div class="card2">
+                        <div class="logo2"></div>
+                        <a>Gmail</a>
+                    </div>
+                    <div class="card3">
+                        <div class="logo3"></div>
+                        <a>Guest</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="low">
+            <p>Already have an account? </p>
+            <a href="login.html">Login here</a>
+        </div>
+    </div>
+</body>
+<script>
+    
+    document.getElementById('myForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        const email = document.getElementById('username').value.trim();
+        const password = document.getElementById('pwd').value;
+        const confirm = document.getElementById('cnfrmpassword').value;
+        if (password.length < 8) {
+            alert('Password must be 8 characters long!');
+            return;
+        }
+        if(password !== confirm){
+            alert('Passwords does not match!');
+            return;
+        }
+        const user = { email, password };
+        localStorage.setItem('demoUser', JSON.stringify(user))
+        alert('Saved!!!')
+        window.location.href = 'login.html';
+  
+
+
+
+    });
+</script>
+
+</html>

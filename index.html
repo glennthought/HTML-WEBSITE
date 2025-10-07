@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>glenn</title>
+    <link rel="stylesheet" href="css_folder/styles.css">
+    <link rel="stylesheet" href="css_folder/responsive.css">
+</head>
+
+<body>
+    <nav class="container">
+        <div class="navbar">
+            <h1 class="text">Gundam:UC Timeline</h1>
+            <ul class="navlist" id="navlist">
+                <li><a href="">Home</a></li>
+                <li><a href="author.html">Author</a></li>
+                <li><a href="">Code</a></li>
+                <li><a href="#" id="logout">LOG OUT</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+    <div class="banner"></div>
+    <div class="box">
+        <div class="card1" id="card1"
+            onclick="scrollToSection('pop')" 
+            data-title="Mobile Suit Gundam"
+            data-img="gundam_folder/rx-78-gundam.gif" 
+            data-content="text text text text Universal Century:78"
+            data-frame="gundam_avatar/rx-78-2-gundam.jpg"
+            data-link="main_contents/MC_MS_Gundam.html"
+            data-item="Mobile Suit Gundam is a 1979 anime television series created by Yoshiyuki Tomino and Hajime Yatate. Yoshikazu Yasuhiko did the character designs and Kunio Okawara was responsible for the mechanical designs, including the titular giant robot, the RX-78-2 Gundam. It started the Gundam franchise and Real Robot genre of mecha anime. The series was later re-edited for theatrical release, and split into three movies. The series is available to be streamed on Crunchyroll and Funimation."
+            ></div>
+        <div class="card2" id="card2"
+            onclick="scrollToSection('pop')" 
+            data-title="Mobile Suit Zeta Gundam"
+            data-img="gundam_folder/z-gundam.gif" 
+            data-content="text text text text Universal Century:78"
+            data-frame="gundam_avatar/zeta-gundam.jpg"
+            data-link="main_contents/MC_MS_ZETA_Gundam.html"
+            data-item="Mobile Suit Zeta Gundam  is a 1985 anime television series. It is a direct sequel to the original Mobile Suit Gundam. It is available to be streamed on Crunchyroll and Funimation."
+            ></div>
+        <div class="card3" id="card3"
+            onclick="scrollToSection('pop')" 
+            data-title="Mobile Suit Gundam:Char's Counter Attack"
+            data-img="gundam_folder/nu-gundam.gif" 
+            data-content="text text text text Universal Century:78"
+            data-frame="gundam_avatar/nu-gundam.jpg"
+            data-link="main_contents/MC_MS_Gundam_chr.html"
+            data-item="Mobile Suit Gundam: Char's Counterattack is an anime movie set in the primary Universal Century timeline of Gundam, taking place in UC 0093.
+Making its theatrical debut on March 12, 1988, Char's Counterattack is the final culmination of the original saga begun in Mobile Suit Gundam and continued through Mobile Suit Zeta Gundam and Mobile Suit Gundam ZZ, marking the final conflict of the fourteen-year rivalry between Char Aznable and Amuro Ray, and the end of the EF/Zeon conflicts. 
+
+"
+            ></div>
+        <div class="card4" id="card4"
+            onclick="scrollToSection('pop')" 
+            data-title="Mobile Suit Gundam Unicorn"
+            data-img="gundam_folder/unicorn-gundam.gif" 
+            data-content="text text text text Universal Century:78"
+            data-frame="gundam_avatar/unicorn-gundam.jpg"
+            data-link="main_contents/MC_MS_Gundam_UC.html"
+            data-item="Mobile Suit Gundam Unicorn is 2010 theatrical OVA series based on the novel series of the same name written by Japanese author Harutoshi Fukui, with character and mechanical designs provided by Yoshikazu Yasuhiko and Hajime Katoki, respectively, and music by Hiroyuki Sawano. The series is available to be streamed on Funimation and Hulu."
+            ></div>
+        <div class="card5" id="card5"
+            onclick="scrollToSection('pop')" 
+            data-title="Mobile Suit Gundam Narrative"
+            data-img="gundam_folder/narrative-gundam.gif" 
+            data-content="text text text text Universal Century:78"
+            data-frame="gundam_avatar/nt-gundam.jpg"
+            data-link="main_contents/MC_MS_Gundam_NT.html"
+            data-item="Mobile Suit Gundam Narrative is a 2018 Japanese animated film. The film is a sequel to Mobile Suit Gundam Unicorn and is loosely based on the novel Mobile Suit Gundam UC: Phoenix Hunting."
+            ></div>
+    </div>
+    <br>
+    <br>
+    <div class="content" id="pop"></div>
+    <div class="container">
+        <div class="box_1" id="box">
+            &copy; 2025 Glentot's Web. All rights reserved. | <a href="#">Privacy Policy</a>
+        </div>
+    </div>
+
+
+
+    <script>
+        localStorage.getItem('demoLoggedIn') === 'true'
+        const loggedin = localStorage.getItem('demoLoggedIn');
+        if(loggedin !=='true'){
+            alert('You must be logged in to view this page!!!');
+            window.location.href ='login.html';
+        }
+        document.getElementById('logout').addEventListener('click', function(event){
+            event.preventDefault();
+            localStorage.removeItem('demoLoggedIn');
+            alert('You have been logged out!');
+            window.location.href ='login.html';
+        });
+        const hamburger = document.getElementById("hamburger");
+        const navlist = document.getElementById("navlist");
+
+        hamburger.addEventListener("click", () => {
+            navlist.classList.toggle("show")
+        });
+
+    </script>
+    <script>
+        function exit() {
+
+            pop.classList.remove('active');
+        }
+    </script>
+    <script>
+        function scrollToSection(id) {
+            document.getElementById(id).scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+        }
+        const card1 = document.querySelector(".card1");
+        const card2 = document.querySelector(".card2");
+        const card3 = document.querySelector(".card3");
+        const card4 = document.querySelector(".card4");
+        const card5 = document.querySelector(".card5");
+
+        const allcard = [card1, card2, card3, card4, card5];
+        const pop = document.getElementById("pop");
+        const cards =document.querySelectorAll(".box > div");
+
+  
+        function show_box(card){
+                const content = card.getAttribute("data-content");
+                const title = card.getAttribute("data-title");
+                const img = card.getAttribute("data-img");
+                const frame = card.getAttribute("data-frame");
+                const link = card.getAttribute("data-link");
+                const item =card.getAttribute("data-item");
+                const cardId = card.id;
+
+                pop.innerHTML = `
+                   <style>
+                   .main{
+                    display:flex;
+                    width:auto;
+                    height:auto;
+                    border:solid 10px black;
+                    border-radius:5px;
+                    padding;10px;
+                   }
+                   .main .navbar_low{
+                    width:125px;
+                    display:flex;
+                    flex-direction:column;
+                    margin:1px;
+                    border:1px solid black;
+                    border-radius:5px;
+                    padding:5px;
+                    background-image: linear-gradient(135deg, rgba(104, 69, 8, 0.665), rgba(0, 167, 42, 0.632), rgba(8, 214, 8, 0.656), rgba(140, 255, 73, 0.679), rgba(135, 255, 135, 0.646), rgba(0, 253, 42, 0.656), rgba(0, 98, 8, 0.589));
+                    background-size:300% 300%;
+                    animation:scroll 5s infinite ease;
+                   }
+                   .main .navbar_low .btn_lower1{
+                    width:100px;
+                    height:100px;
+                    background-size:90% 90%;
+                    background-repeat:no-repeat;
+                    background-image:url(gundam_logo/m_gundam.png);
+                    background-position:center;
+                   } 
+                   .main .navbar_low .btn_lower2{
+                    width:100px;
+                    height:100px;
+                    background-size:90% 90%;
+                    background-repeat:no-repeat;
+                    background-position:center;                    
+                    background-image:url(gundam_logo/m_zeta_gundam.png);
+                   } 
+                   .main .navbar_low .btn_lower3{
+                    width:100px;
+                    height:100px;
+                    background-size:90% 90%;
+                    background-position:center;
+                    background-repeat:no-repeat;
+                    background-image:url(gundam_logo/m_gundam_charcntatk.png);
+                   } 
+                   .main .navbar_low .btn_lower4{
+                    width:100px;
+                    height:100px;
+                    background-size:90% 90%;
+                    background-position:center;
+                    background-repeat:no-repeat;
+                    background-image:url(gundam_logo/m_gundam_unicorn.png);
+                   } 
+                   .main .navbar_low .btn_lower5{
+                    width:100px;
+                    height:100px;
+                    background-size:90% 90%;
+                    background-position:center;
+                    background-repeat:no-repeat;
+                    background-image:url(gundam_logo/m_gundam_nt.png);
+                   }                                                             
+                   .main .navbar_low .btn_lower1:hover{
+                    animation: inside_glow 0.4s infinite alternate;
+                    transform: scale(1.3);
+                   }
+                   .main .navbar_low .btn_lower2:hover{
+                    animation: inside_glow 0.4s infinite alternate;
+                    transform: scale(1.3);                   
+                   }
+                   .main .navbar_low .btn_lower3:hover{
+                    animation: inside_glow 0.4s infinite alternate;
+                    transform: scale(1.3);                   
+                   }
+                   .main .navbar_low .btn_lower4:hover{
+                    animation: inside_glow 0.4s infinite alternate;
+                    transform: scale(1.3);                   
+                   }
+                   .main .navbar_low .btn_lower5:hover{
+                    animation: inside_glow 0.4s infinite alternate;
+                    transform: scale(1.3);                   
+                   }
+                   .main .lower-box{
+                    display:flex;
+                    flex-direction:column;
+                    border-radius:5px;
+                    border:solid 2px rgb(211, 211, 211);
+                    background-image:url(stars.gif);
+
+                   }
+                   .inner-container{
+                    display:flex;
+                    background-image:url(stars.gif);
+            
+                   }
+                   .inner-cont{
+                    display:flex;
+                    justify-content:space-between;
+                    margin:0px 0px 20px 0px;
+                    border:solid 3px #444 ;
+                    padding:10px;
+                    border-radius:10px;
+                    background-image:linear-gradient(135deg, rgb(104, 69, 8), rgb(167, 106, 0), rgb(195, 120, 0), rgb(255, 188, 73), rgb(255, 243, 178), rgb(253, 156, 0), rgb(98, 54, 0));
+                    background-size:600% 600%;
+                    animation:rainbowShift 10s ease infinite;
+                   }
+                   .inner-title{ 
+                     margin: 0px 10px 0px 10px;
+                     align-items:center;
+                     background-color:rgb(62, 62, 62);
+                     width:100%;
+                     color:greenyellow;
+                     border:solid 2px greenyellow;
+                     border-radius:10px;
+                    
+                   }
+
+                   .inner-img{
+                    display:flex; 
+                    align-items:center; 
+                    border-radius:20px;
+                   }
+                   .inner-box{
+                    display:flex;
+                    width:100%;
+                    height:auto;
+                    font-size:10px;
+                   } 
+                   .pic{
+                    
+                    width:250px;
+                    height:250px;
+                    max-height:300px;
+                    aspect-ratio:1/1;
+                    background-repeat:no-repeat;
+                    background-position:center;
+                    background-size:cover;
+                    border-radius:30px;
+                    border:solid 2px rgb(255, 172, 5);
+                    transition: background 0.5s ease-in-out;
+                    margin:0px 15px 0px 30px
+                   }
+                   .inner-text{
+                     margin:0px 15px 0px 15px;
+                     font-size:20px;
+                     text-align:justify;
+                     text-indent:30px;
+                     background-color:grey;
+                     border-radius:20px;
+                     padding:20px;
+                     width:100%;
+                   }
+                   .inner-text1{
+                     margin:10px 15px 0px 30px;
+                     font-size:20px;
+                     text-align:justify;
+                     background-color:grey;
+                     border-radius:20px;
+                     padding:20px;
+                   }
+                   button{
+                    border:solid 1px #222;
+                    color:black;
+                    background:rgb(225, 225, 225);
+                    border-radius:10px;
+                    transition:all 0.8s ease;
+                    width:75px;
+                    height:35px;
+                    font-weight:bold;
+                   }
+
+                   .main .lower-box  .inner-cont button:hover{
+                    background:greenyellow;
+                    color:orangered;
+                    text-decoration:underline;
+                    }
+                   </style>
+
+
+
+            <div class="main">
+                <div class="navbar_low">
+                    <button class="btn_lower1" onclick="inner_show('card1')"></button>
+                    <button class="btn_lower2" onclick="inner_show('card2')"></button>
+                    <button class="btn_lower3" onclick="inner_show('card3')"></button>
+                    <button class="btn_lower4" onclick="inner_show('card4')"></button>
+                    <button class="btn_lower5" onclick="inner_show('card5')"></button>    
+                </div>
+                <div class="lower-box">
+                    <div class="inner-cont">
+                       <button onclick="exit()">Back</button>
+                       <h2 class="inner-title">${title}</h2>
+                       <button onclick="window.location.href='${link}'">Learn More</button>
+                    </div>   
+                    <div class="inner-container">
+                        <div class=pic></div>
+                        <div class="inner-text">
+                          <p>${item}
+                             </p>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>        
+                `;
+                pop.classList.add("active");
+                const pic = pop.querySelector(".pic");
+
+                pic.style.backgroundImage = `url('${img}?t=${Date.now()}')`;
+               
+                setTimeout(() => {
+                     pic.style.backgroundImage =`url('${frame}')`;
+                },2300);
+
+        }
+    cards.forEach(card => {
+        card.addEventListener("click", (e) => {
+            e.stopPropagation();
+            show_box(card);
+        });
+    });
+    function inner_show(cardId) {
+        const card = document.getElementById(cardId);
+        if (card) {
+            show_box(card);
+            scrollToSection('pop'); 
+        }
+    }
+        
+
+
+    </script>
+
+</body>
+
+</html>
