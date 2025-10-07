@@ -80,7 +80,7 @@ body {
 
 .banner {
     background-clip: padding-box;
-    background-image: url(./stars.gif);
+    background-image: url("./stars.gif");
     background-repeat: no-repeat;
     background-size: 300% 300%;
     animation: rainbowShift 20s ease infinite alternate-reverse;
@@ -114,7 +114,7 @@ body {
     background-position: center;
     width: 250px;
     height: 250px;
-    background-image: url(../gundam_logo/m_gundam.png);
+    background-image: url("../gundam_logo/m_gundam.png");
     filter: grayscale(100%);
     transition: all 0.5s ease;
     background-size: 97% 100%;
@@ -132,7 +132,7 @@ body {
     background-position: center;
     width: 250px;
     height: 250px;
-    background-image: url(../gundam_logo/m_zeta_gundam.png);
+    background-image: url("../gundam_logo/m_zeta_gundam.png");
     filter: grayscale(100%);
     transition: all 0.5s ease;
     background-size: 97% 100%;
@@ -150,7 +150,7 @@ body {
 .box .card3 {
     width: 250px;
     height: 250px;
-    background-image: url(../gundam_logo/m_gundam_charcntatk.png);
+    background-image: url("../gundam_logo/m_gundam_charcntatk.png");
     filter: grayscale(100%);
     transition: all 0.5s ease;
     background-size: 97% 100%;
@@ -168,7 +168,7 @@ body {
 .box .card4 {
     width: 250px;
     height: 250px;
-    background-image: url(../gundam_logo/m_gundam_unicorn.png);
+    background-image: url("../gundam_logo/m_gundam_unicorn.png");
     filter: grayscale(100%);
     transition: all 0.5s ease;
     background-size: 97% 100%;
@@ -186,7 +186,7 @@ body {
 .box .card5 {
     width: 250px;
     height: 250px;
-    background-image: url(../gundam_logo/m_gundam_nt.png);
+    background-image: url("../gundam_logo/m_gundam_nt.png");
     filter: grayscale(100%);
     transition: all 0.7s ease;
     background-size: 97% 100%;
@@ -271,5 +271,6 @@ body {
         box-shadow: inset 0 0 30px rgb(255, 46, 46);
     }
 }
+
 
 
