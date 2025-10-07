@@ -432,7 +432,7 @@ hr {
 }
 
 #sidecharacter3 {
-    background-image: url(./Characters/riddhe.jpg);
+    background-image: url("../Characters/riddhe.jpg");
     background-size: 100%;
     width: 100px;
     height: 100px;
@@ -830,4 +830,5 @@ hr {
     }
 
 }
+
 
