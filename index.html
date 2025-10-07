@@ -93,7 +93,7 @@ Making its theatrical debut on March 12, 1988, Char's Counterattack is the final
         const loggedin = localStorage.getItem('demoLoggedIn');
         if(loggedin !=='true'){
             alert('You must be logged in to view this page!!!');
-            window.location.href ='/login.html';
+            window.location.href ='login.html';
         }
         document.getElementById('logout').addEventListener('click', function(event){
             event.preventDefault();
@@ -376,5 +376,6 @@ Making its theatrical debut on March 12, 1988, Char's Counterattack is the final
     </script>
 
 </body>
+
 
 </html>
