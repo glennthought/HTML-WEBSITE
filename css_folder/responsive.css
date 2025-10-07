@@ -73,7 +73,7 @@
     border: solid 0.5px black;
     background-size: 600% 600%;
     animation: rainbowShift 5s ease infinite;
-    background-image: url(./stars.gif);
+    background-image: url("../stars.gif");
     transition: background-image 0.5s ease;
 
 }
@@ -499,4 +499,5 @@
 
 .content.active .inner-title {
     animation: outside_glow_tech 0.8s infinite alternate;
+
 }
