@@ -6,7 +6,7 @@
 }
 
 body {
-  background-image: url(/img.gif);
+  background-image: url("../img.gif");
   animation: bg 15s ease infinite;
   background-size: 190% 110%;
   background-repeat: no-repeat;
@@ -237,7 +237,7 @@ body {
 }
 
 .card1 .logo1{
- background-image: url(/gundam_logo/facebook.jpg);
+ background-image: url("../gundam_logo/facebook.jpg");
  background-size: 310%;
  background-position: center;
  width: 30px;
@@ -245,7 +245,7 @@ body {
  border-radius: 50%;
 }
 .card2 .logo2{
- background-image: url(/gundam_logo/google.png);
+ background-image: url("../gundam_logo/google.png");
  background-size: cover;
  background-position: center;
  width: 30px;
@@ -253,7 +253,7 @@ body {
  border-radius: 50%;
 }
 .card3 .logo3{
- background-image: url(/gundam_logo/guest.png);
+ background-image: url("../gundam_logo/guest.png");
  background-size: 80%;
  background-position: center;
  width: 30px;
@@ -529,4 +529,5 @@ body {
   to {
     box-shadow: 0 0 50px rgb(46, 255, 84);
   }
+
 }
