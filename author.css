@@ -1,0 +1,416 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    background-image: url(./img.gif);
+    background-size: 400% 200%;
+    animation: bg 10s ease infinite;
+    height: 100vh;
+    font-family: "custom_two", sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-self: center;
+    justify-content: space-between;
+    background-image: linear-gradient(to bottom, rgba(104, 69, 8, 0.665), rgba(167, 106, 0, 0.632), rgba(195, 120, 0, 0.656), rgba(255, 188, 73, 0.679), rgba(255, 243, 178, 0.646), rgba(253, 156, 0, 0.656), rgba(98, 54, 0, 0.589));
+    background-size: 300% 300%;
+    animation: bg 10s ease infinite;
+    width: 97%;
+    height: 50px;
+    margin: 3px;
+    border-radius: 10px;
+    border: solid 1px rgba(52, 35, 1, 0.402);
+    z-index: 9999;
+}
+
+.container .navbar {
+    display: flex;
+    justify-content: space-between;
+    margin: 3px;
+    width: 100%;
+    justify-self: center;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.176), rgba(255, 255, 255, 0.176), rgba(0, 0, 0, 0.152));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 11px;
+    z-index: 1000;
+    position: relative;
+}
+
+.container .navbar .text {
+    display: flex;
+    justify-content: space-between;
+    text-shadow: 1px 1px 5px rgb(85, 51, 2);
+    margin: 2px
+}
+
+.container .navbar .navlist {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    z-index: 9999;
+    position: relative;
+}
+
+.container .navbar .navlist li {
+    list-style: none;
+    margin: 2px;
+    justify-content: space-between;
+
+
+}
+
+.container .navbar .navlist a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.597);
+    font-family: "custom_two", sans-serif;
+    font-size: 20px;
+    text-shadow: 1px 1px 5px rgb(55, 36, 4);
+}
+
+.container .navbar .navlist a:hover {
+    color: orangered;
+}
+
+:root {
+    --dur: 800ms;
+}
+
+.hamburger::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: opacity var(--dur)ease;
+    pointer-events: none;
+    will-change: opacity;
+    background-size: 600% 600%;
+    animation: rainbowShift 5s ease infinite;
+    background-image: linear-gradient(135deg, rgb(104, 69, 8), rgb(167, 106, 0), rgb(195, 120, 0), rgb(255, 188, 73), rgb(255, 243, 178), rgb(253, 156, 0), rgb(98, 54, 0));
+}
+
+.hamburger:hover::before {
+    opacity: 1;
+}
+
+.hamburger {
+    position: relative;
+    overflow: hidden;
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    width: 33px;
+    height: 33px;
+    border-radius: 5px;
+    border: solid 0.5px black;
+    background-size: 600% 600%;
+    animation: rainbowShift 5s ease infinite;
+    background-image: url(./stars.gif);
+    transition: background-image 0.5s ease;
+
+}
+
+.hamburger span {
+    animation: innerPulse 4s infinite alternate;
+    position: relative;
+    background-image: linear-gradient(135deg, rgba(17, 48, 0, 0.665), rgba(4, 229, 0, 0.632), rgba(31, 102, 0, 0.656), rgba(0, 72, 10, 0.679), rgba(25, 249, 0, 0.646), rgba(24, 180, 0, 0.656), rgba(15, 98, 0, 0.589));
+    height: 4px;
+    width: 25px;
+    margin: 4px;
+    transition: 0.8s;
+    border-radius: 1.5px;
+    animation: rainbowShift 5s ease infinite;
+    background-size: 200% 200%;
+    border: solid 0.9px#444;
+    
+}
+
+
+
+
+
+.mainbox {
+    margin:  3px;
+    font-size: 10px;
+    width: 95vw;
+    height: 100vh;
+    background-image: linear-gradient(to bottom, rgba(255, 172, 5, 0.934), rgba(128, 128, 128, 0.948), rgba(69, 69, 69, 0.948));
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    border: solid 5px gray;
+    justify-self: center;
+}
+
+.mainbox .border {
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.mainbox .border .pic {
+    display: flex;
+    width: 200px;
+    height: 200px;
+    background-image: url(./gundam_avatar/glenn.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: solid 3px white;
+    border-radius: 50%;
+    background-position: center;
+}
+
+.mainbox .border p {
+    height: 195px;
+    width: 900px;
+    display: flex;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    border-radius: 5px;
+
+    text-indent: 30px;
+    padding: 5px;
+
+}
+
+.mainbox .low {
+    display: flex;
+    width: 100%;
+    gap: 30px;
+
+
+}
+
+.mainbox .low .text2 {
+    margin: 10px;
+    display: flex;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    border-radius: 5px;
+    text-indent: 30px;
+    padding: 5px;
+
+}
+
+.mainbox .low .lowtext {
+
+    margin: 10px;
+    padding: 3px;
+    border-radius: 5px;
+    width: 350px;
+    height: 35px;
+
+}
+
+.mainbox .low .one {
+    margin: 0px 50px 0px 50px;
+    display: flex;
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    background-size: 100%;
+    background-position: center;
+    background-image: url(./Characters/fullstack.png);
+}
+
+.mainbox .low .two {
+    margin: 0px 50px 0px 50px;
+    display: flex;
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+
+    background-image: url(./Characters/performance.png);
+}
+
+.mainbox .low .three {
+    margin: 0px 50px 0px 50px;
+    display: flex;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    background-color: white;
+    background-image: url(./Characters/github.png);
+}
+
+
+
+
+
+
+@media(max-width:600px) {
+    .container .navbar .navlist{
+         z-index: 9000;
+    }
+    .container {
+        font-size: 10px;
+        height: auto;
+    }
+
+    .container .navbar .navlist {
+        display: none;
+        transition: all 0.5s;
+        flex-direction: column;
+        background: #444;
+        position: absolute;
+        border-radius: 10px;
+        border: solid 1px rgb(0, 255, 0);
+        top: 38px;
+        right: 0;
+        width: 100px;
+        text-align: right;
+        padding: 10px;
+        z-index: 1000;
+    }
+
+    .container .navbar .navlist.show {
+        display: flex;
+        z-index: 1000;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
+
+
+@keyframes bg {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@font-face {
+    src: url('/Hanalei/Hanalei-Regular.ttf')format("truetype");
+    font-family: "custom_one";
+}
+
+@font-face {
+    src: url('/Fascinate/Fascinate-Regular.ttf')format("truetype");
+    font-family: "custom_two";
+}
+
+
+@keyframes inside_glow {
+    from {
+        box-shadow: inset 0 0 10px rgba(255, 0, 0, 0.6);
+    }
+
+    to {
+        box-shadow: inset 0 0 30px rgb(255, 46, 46);
+    }
+}
+
+@media(max-width:1440px) {
+    .container {
+
+        transform: scale(0.9);
+    }
+
+    .mainbox {
+        width: 90%;
+        height: 91%;
+
+    }
+
+    .mainbox .low .one {
+        width: 70px;
+        height: 70px;
+    }
+
+    .mainbox .low .two {
+         width: 70px;
+        height: 70px;
+    }
+
+    .mainbox .low .three {
+         width: 70px;
+        height: 70px;
+    }
+
+}
+@media(max-width:600px) {
+    .container {
+
+        transform: scale(0.9);
+    }
+    
+    .container .navbar .navlist {
+        display: none;
+        transition: all 0.5s;
+        flex-direction: column;
+        background: #444;
+        position: absolute;
+        border-radius: 10px;
+        border: solid 1px rgb(0, 255, 0);
+        top: 38px;
+        right: 0;
+        width: 100px;
+        text-align: right;
+        padding: 10px;
+        z-index: 1000;
+    }
+
+    .container .navbar .navlist.show {
+        display: flex;
+        z-index: 1000;
+    }
+    .hamburger {
+        display: flex;
+    }
+    .mainbox {
+        width: 90%;
+        height: 90%;
+        font-size: 5px;
+    }
+    .mainbox .border{
+        height: 100px;
+    }
+    .mainbox .border .pic{
+        width: 500px;
+        height: 100px;
+        border: solid 1px wheat;
+    }
+    .mainbox  .border p{
+        font-size: 5px;
+    }
+    .mainbox .low .text2{
+        font-size: 5px;
+    }
+    .mainbox .low .one {
+        width: 50%;
+        height: 50px;
+        background-repeat: no-repeat;
+    }
+
+    .mainbox .low .two {
+        width: 50%;
+        height: 50px;
+    }
+
+    .mainbox .low .three {
+        width: 50%;
+        height: 50px;
+    }
+
+}
